@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Games</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="phase2.js"></script>
+</head>
+<body>
+    <div id="booking-phase-2">
+        <h2>Select One or Multiple Games</h2>
+        <form id="phase-2-form" action="./phase3.html" method="POST">
+            <div>
+                <input type="checkbox" id="bowling" name="game" value="bowling">
+                <label for="bowling">Bowling</label>
+                <select id="bowling-options" disabled>
+                    <option value="" disabled selected>Select a game</option>
+                    <option value="1">1 Game</option>
+                    <option value="2">2 Games</option>
+                    <option value="3">3 Games</option>
+                </select>
+            </div>
+            <div>
+                <input type="checkbox" id="dart" name="game" value="dart">
+                <label for="dart">Dart</label>
+                <select id="dart-options" disabled>
+                    <option value="" disabled selected>Select a duration</option>
+                    <option value="30">30 Minutes</option>
+                    <option value="60">60 Minutes</option>
+                </select>
+            </div>
+            <div>
+                <input type="checkbox" id="pool" name="game" value="pool">
+                <label for="pool">Pool</label>
+                <select id="pool-options" disabled>
+                    <option value="" disabled selected>Select a duration</option>
+                    <option value="30">30 Minutes</option>
+                    <option value="60">60 Minutes</option>
+                </select>
+            </div>
+            <button type="submit" id="phase-2-next">Next</button>
+        </form>
+    </div>
+    <script src="phase2.js"></script>
+</body>
+</html>
